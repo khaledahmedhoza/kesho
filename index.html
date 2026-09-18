@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kesho — a consented safety network</title>
+<meta name="description" content="Proof of concept: a gesture-triggered, consent-transparent community safety alert network.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="phone">
+  <header class="phone-status">
+    <span class="phone-status__time">9:41</span>
+    <span class="phone-status__note">Kesho · works offline-first</span>
+  </header>
+
+  <main id="app" class="screen-host" aria-live="polite">
+    <!-- screens are rendered here by js/ui.js -->
+  </main>
+
+  <nav class="tabbar" id="tabbar" hidden>
+    <button data-tab="home" class="tabbar__btn" aria-label="Home">Home</button>
+    <button data-tab="network" class="tabbar__btn" aria-label="Your network">Network</button>
+    <button data-tab="trigger" class="tabbar__btn" aria-label="Alert">Alert</button>
+    <button data-tab="inbox" class="tabbar__btn" aria-label="Inbox">Inbox</button>
+  </nav>
+</div>
+
+<aside class="sidenote">
+  <h2>What this is</h2>
+  <p>A proof of concept built for the Andela × Open Society Foundations civic tech hackathon, Safety, Reporting &amp; Protection track. It demonstrates one mechanism: a community alert network where reach is opt-in and visible at every hop, and trust is labelled rather than assumed.</p>
+  <p>Read <a href="README.md">README.md</a> for what's real, what's simulated, and what a production build would need.</p>
+</aside>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
